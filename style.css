@@ -1,0 +1,261 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/****************
+utility classes 
+*****************/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.link-btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(50, 50, 196);
+    color: white;
+    padding: 1rem 1.4rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1.8rem;
+
+}
+
+
+
+/****************
+banner-section
+*****************/
+.banner{
+    background-color:  #161616;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    border-radius: 30px;
+    padding: 10px 50px 0;
+    margin-bottom: 130px;
+    margin-top: 20px;
+}
+.banner-text{
+    padding-right: 25px;
+}
+.banner-text h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: white;
+}
+.banner-text p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    color: #FFFFFF;
+}
+
+.banner-img img{
+    width: 581px;
+}
+
+/****************
+side nav and article section
+*****************/
+.nav-blog{
+    display: flex;
+    gap: 0 24px;
+}
+nav{
+    min-width: 312px;
+    height: 312px;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    
+
+}
+nav a{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 1.4rem;
+    color:  #161616;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 252px ;
+    margin: 35px auto 0;
+    border: 1px solid #161616;
+}
+
+
+.match-blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 24px;
+}
+.match-blog img{
+    width: 100%;
+}
+.details{
+    padding: 5px 10px;
+    line-height: 2rem;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2)
+}
+.details a{
+     display: inline-block;
+    text-decoration: none;
+    padding: 0 .8rem;
+    border: 1px solid #161616;
+    color: #161616;
+    border-radius: .6rem;
+
+}
+.details p{
+    font-size: 18px;
+    color: #161616;
+    line-height: 27px;
+}
+.details span{
+    color:#161616B2;
+    font-size: 16px;
+    margin-right: 30px;
+}
+.tab-btn{
+    text-align: center;
+    margin-top: 1.8rem;
+    display: none;
+}
+/****************
+footer section
+*****************/
+footer{
+    margin-top: 130px;
+    background-color:#161616;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 4rem  2rem ;
+    text-align: center;
+    
+}
+footer h2{
+    font-size: 40px;
+}
+hr{
+    border: 1px dotted rgba(255, 255, 255, 0.1);
+    margin: 50px 0;
+}
+footer .menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+    justify-content: center;
+}
+footer .menu a{
+    text-decoration: none;
+    color:  #B9B9B9;
+    font-size: 16px;
+
+}
+footer i{
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 1rem .5rem;
+}
+
+
+/****************
+media queries
+*****************/
+@media screen and (max-width: 1180px){
+    .banner-text h1{
+        font-size: 2.5rem;
+    }
+    .banner-img img{
+        width: 400px;
+    }
+}
+@media screen and (min-width:663px) and (max-width: 992px) {
+    .banner{
+        margin-bottom: 5rem;
+    }
+    .banner-text h1{
+        font-size: 1.5rem;
+    }
+    .banner-img img{
+        width: 400px;
+    }
+    .link-btn{
+        font-size: .8rem;
+    }
+    .nav-blog{
+        flex-direction: column;
+
+    }
+    nav{
+        flex-direction: row;
+        background-color: #FFFFFF;
+        height: auto;
+    }
+    nav a{
+        margin-left: 1em;
+        margin-bottom: 1rem;
+    }
+    .match-blogs{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .tab-btn{
+        display: block;
+    }
+}
+@media screen and (max-width: 662px) {
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    .banner{
+        margin-bottom: 5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .banner-text h1{
+        font-size: 1.5rem;
+    }
+    .banner-img img{
+        width: 280px;
+    }
+    .link-btn{
+        font-size: .8rem;
+    }
+    .nav-blog{
+       flex-direction: column;
+
+    }
+    nav{
+        align-items: center;
+        background-color: #FFFFFF;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    nav a{
+        margin-left: 1em;
+        
+    }
+    .match-blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    footer .menu{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
