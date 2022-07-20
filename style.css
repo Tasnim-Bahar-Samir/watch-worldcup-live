@@ -126,13 +126,16 @@ nav a.active{
     grid-template-columns: repeat(3,1fr);
     grid-gap: 24px;
 }
+
 .match-blog img{
     width: 100%;
 }
 .details{
     padding: 5px 10px;
     line-height: 2rem;
-    box-shadow: 0 0 2px rgba(0, 0, 0, .2)
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .details a{
      display: inline-block;
@@ -200,17 +203,21 @@ upcoming match html file
 .upcoming-match{
     padding:5px 20px;
     text-align: center;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    border-radius: 5px;
 }
-.upcoming-match .details h3{
-    text-align: center;
+.upcoming-match h3{
+    font-size: 1rem;
+    line-height: 1.8rem;
 }
-.flag{
+.match-details{
     display: flex;
     gap: 0 10px;
+    padding: 10px;
     align-items: center;
-    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    
 }
-.flag img{
+.match-details img{
     width: 45%;
 }
 
@@ -274,10 +281,13 @@ media queries
         gap: 10px;
     }
     .banner-text h1{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+    .banner-text p{
+        font-size: .8rem;
     }
     .banner-img img{
-        width: 280px;
+        width: 100%;
     }
     .link-btn{
         font-size: .8rem;
