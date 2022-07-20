@@ -121,6 +121,7 @@ nav a.active{
 
 
 .match-blogs{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 24px;
@@ -245,6 +246,7 @@ media queries
         flex-direction: row;
         background-color: #FFFFFF;
         height: auto;
+        
     }
     nav a{
         margin-left: 1em;
@@ -289,6 +291,7 @@ media queries
         background-color: #FFFFFF;
         height: auto;
         margin-bottom: 1rem;
+        margin-left: 26px;
     }
     nav a{
         margin-left: 1em;
